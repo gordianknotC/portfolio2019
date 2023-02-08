@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @font-face {
+            font-family: 'webfont-taipei';
+            src:
+                 url('./TaipeiSansTCBeta-Bold.ttf'),
+                 url('./TaipeiSansTCBeta-Light.ttf'),
+                 url('./TaipeiSansTCBeta-Regular.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+         .webfont-taipei {
+            font-family: 'webfont-taipei';
+        }
+
+    </style>
+</head>
+<body>
+<div class="webfont-taipei">
+        class STRING {
+        聯絡我
+
+        ...Literal.spanAccList("工業設計師, 機構設計師"), p("及"), h("網頁設計師"),
+        ...Literal.spanLinkList("遊戲配樂, 電子音樂", links:["", ""]),
+        p("總結自己的職業生涯, 主要專注於視覺呈現及人性的觀察,  開發過的產品包括"),
+        ...Literal.spanAccList("電競滑鼠, 鍵盤, presenter, 工業電腦"),
+        p("常年的不足感, 雖然畫得一手好"), h("sketch"),
+        p("但設計工作不好找, 近幾年花費不少時間研究"),
+        ...Literal.spanAccList("前端設計, UI設計"),
+        b('android開發'), p("寫過"), a("NFC"), b("應用App"),
+        p("程式設計對我而言一種"), b("prototyping"), p("的能力, 如同工業設計師需要學會制作各種"),
+        b("模型"), p("一樣, 直到開發了"), b("android app"), p("才開始意識到系統性設計的重要"),
+        p("雖同時做過工業設計及程式設計, 但以"), b("思維模式"), p("思維模式而言還是偏向於設計師"),
+        b("(關連性思維)."),
+        p("研究哲學心理學及玄密學(占星/人類圖), 喜歡觀察人, 有禪修沒念佛, 算是佛半個佛教徒, "),
+        b("MBTI"),p("人格量表屬"), b("INFP"), p("內向感性型, 摩羯座")
+
+        STRING._();
+        static const String about_me        = 'About Me';
+        static const String about           = 'About';
+        static const String Eabout          = 'About';
+        static const String cAbout_me       = ' 關於我';
+        static const String CheadlineMyself = '工業設計師,機構設計師, 網頁設計師, 一半理智, 一半感性, 一半邏輯, 一半藝術, 寫過遊戲配樂及電子音樂.';
+
+        static const String me              = ' Me';
+        static const String portfoli        = 'Portfoli';
+        static const String o               = 'o';
+        static const String headline        = 'I\'am Zubair Rehman, Mobile App Developer from Islamabad, Pakistan';
+        static const String summary         = 'Focused professional having excellent technical and communication skills, and offering 6 years of experience in Computer industry. Proficient at designing and formulating test automation frameworks, writing code in various languages, feature development and implementation. Specialize in thinking outside the box to find unique solutions to difficult engineering problems.';
+        static const String experience      = 'Experience';
+        static const String skills_i_have   = 'What Skill I Have';
+
+        // footer
+        static const String rights_reserved = '© 2019 PORTFOLIO by YesDesign';
+
+        // menu items
+        static const String menu_home      = 'Home';
+        static const String menu_about     = 'About';
+        static const String menu_contact   = 'Contact';
+        static const String menu_portfolio = 'Portfolio';
+        static const String menu_audioTest = 'AudioTest';
+
+
+        // keywords - Chinese
+        static const String CIpc           = '工業電腦';
+        static const String Cpendrive      = '隨身碟';
+        static const String Cheadphone     = '耳機';
+        static const String CgamingMouse   = '電競滑鼠';
+        static const String Ckeyboard      = '鍵盤';
+        static const String Cneed          = '需求';
+        static const String CserviceDesign = '服務設計';
+
+        // gallery
+        static const String gallery_hdapp       = "UI Design for Human Design App";
+        static const String gallery_sketchImage = "My Drawings and Product Design Sketches";
+        static const String gallery_revolver    = "Gaming Mouse Design";
+        static const String gallery_camouflage  = "Gaming Mouse Design";
+        static const String gallery_driftsand   = "Office Mouse Design";
+        static const String gallery_exia        = "Gaming Mouse Design";
+        static const String gallery_ipc         = "Mechanical Design for IPC";
+        static const String gallery_mplamp      = "Concept Design";
+        static const String gallery_nfcapp      = "Programming Design for NFC App";
+        static const String gallery_petmate     = "Concept Design";
+        static const String gallery_pluto       = "Office Mouse Design";
+        static const String gallery_radiolamp   = "Concept Design";
+        static const String gallery_scorpio     = "Gaming Mouse Design";
+        }
+
+        class ROUTE{
+        static const String HOME      = '/home';
+        static const String CONTACT   = '/contact';
+        static const String PORTFOLIO = '/portfolio';
+
+        static const String AUDIOTEST = '/audioTest';
+        }
+
+
+        extSpan(
+        children:[
+        p("設計開模生產的產品有"),
+        ..."電競鼠X3, office鼠x2, 隨身碟x1".split(',').map((t){
+        return TextSpan(children:[
+        a(t), p(", ")
+        ]);
+        }),
+        p("工業"), a("電腦", link: ""),
+        p("多半涉及上百個零件, 主要負責舊產品線客制化修改, 及較小型之產品 - 如"),
+        a("血糖量測盒", link: ""),
+        p("機構, 加工方面熟悉NCT鋁件, 待過沖壓廠, 對於鈑金件及部份鋁制加工很熟悉. 其餘"),
+        a("作品", link: ""),
+
+        p("均為概念設計. 長年的不足感, 讓我最終練就一手的好Sketch, 但仍然很難找到工作, 最近幾年開始嘗試轉向UI及前端設計."),
+        ]
+        )
+        );
+        b("Flash"),
+        p("時代"),
+        a("作品集"),
+        p(", 寫過一年半時間的"),
+        a("python kivy"),
+        p("android app, 流浪狗公益APP,  並熱悉linux, 在這一年多的時間裡只寫了一萬行代碼, 最後因無法管理而放棄. 寫過python to javascript "),
+        b("compiler"),
+        p("compiler 但最終只是個玩具, 也寫過"),
+        b("DSL"),
+        p("語言compile to html, 最終也只是個玩具, "),
+        b("VueJS"),
+        p("主要拿來寫"),
+        a("作品集"),
+        p(", 及人類圖"),
+        a("人類圖"),
+        p("星盤推算程式, 正開始能寫出有系統性程式是最近一年開始以"),
+        a("Dart/Flutter"),
+        p("開發android "),
+        a("nfc"),
+        p("app, 包括前台及簡易的後台, 也是第一次寫到七萬行的代碼仍覺得可管理.")
+        ]
+        ildren:[
+        b("Flash"),
+        p("時代"),
+        a("作品集"),
+        p(", 寫過一年半時間的"),
+        a("python kivy"),
+        p("android app, 流浪狗公益APP,  並熱悉linux, 在這一年多的時間裡只寫了一萬行代碼, 最後因無法管理而放棄. 寫過python to javascript "),
+        b("compiler"),
+        p("compiler 但最終只是個玩具, 也寫過"),
+        b("DSL"),
+        p("語言compile to html, 最終也只是個玩具, "),
+        b("VueJS"),
+        p("主要拿來寫"),
+        a("作品集"),
+        p(", 及人類圖"),
+        a("人類圖"),
+        p("星盤推算程式, 正開始能寫出有系統性程式是最近一年開始以"),
+        a("Dart/Flutter"),
+        p("開發android "),
+        a("nfc"),
+        p("app, 包括前台及簡易的後台, 也是第一次寫到七萬行的代碼仍覺得可管理.")
+        ]
+        Literal.spanBoldP("禪說: "),
+        Literal.spanItP("將心待悟, 求昇反墮, 過份執著常帶來反效果，但也正是因為這個反效果能"
+        "該人知所進退有所取捨，也正因為有所取捨才能帶來心靈的自由."),
+        Literal.spanBoldP("\t ~ The Price of Freedom is Eternal Vigilance - Rolo May"),
+        Literal.spanP("不僅在設計上如此, 寫程式時也是如此..."),
+
+        Literal.spanBoldP("禪說: "),
+        Literal.spanItP("將心待悟, 求昇反墮, 過份執著常帶來反效果，但也正是因為這個反效果能"
+        "該人知所進退有所取捨，也正因為有所取捨才能帶來心靈的自由."),
+        Literal.spanBoldP("\t ~ The Price of Freedom is Eternal Vigilance - Rolo May"),
+        Literal.spanP("不僅在設計上如此, 寫程式時也是如此..."),
+
+        const SkillSection.id(this.constraints):
+        title = "工業設計",
+        subtitle = "product design",
+        icon = SkillModel.industrialDesignIcon,
+        type = _EType.id,
+        clouds = SkillModel.industrialDesign;
+
+        const SkillSection.ui(this.constraints):
+        title = "UI設計",
+        subtitle = "ui design",
+        icon = SkillModel.uiDesignIcon,
+        type = _EType.ui,
+        clouds = SkillModel.uiDesign;
+
+        const SkillSection.programming(this.constraints):
+        title = "程式設計",
+        subtitle = "programming design",
+        icon = SkillModel.programmingDesignIcon,
+        type = _EType.programming,
+        clouds = SkillModel.programmingDesign;
+
+        const SkillSection.music(this.constraints):
+        title = "電子音樂",
+        subtitle = "music composition",
+        icon = SkillModel.musicIcon,
+        type = _EType.music,
+        clouds = SkillModel.musicComposition;
+
+        return Text.rich(
+        TextSpan(
+        children:[
+        p("設計開模生產的產品有"),
+        ..."電競鼠X3, office鼠x2, 隨身碟x1".split(',').map((t){
+        return TextSpan(children:[
+        a(t), p(", ")
+        ]);
+        }),
+        p("工業"), a("電腦", link: ""),
+        p("多半涉及上百個零件, 主要負責舊產品線客制化修改, 及較小型之產品 - 如"),
+        a("血糖量測盒", link: ""),
+        ]
+        )
+</div>
+<comment>
+    source:
+    1) converter
+    https://github.com/ecomfe/fontmin
+        usage:
+            fontmin sourcename > outputname
+
+    2) compressor
+    https://github.com/aui/font-spider
+        usage:
+            font-spider index.html
+
+
+
+
+</comment>
+</body>
+</html>
