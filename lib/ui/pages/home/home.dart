@@ -374,15 +374,6 @@ class _HomePageState extends State<HomePage> with RouteAwarePlus, RouteObserverM
     _D.d(()=>'rebuild _buildSmallScreen home');
     return Stack(
       children: <Widget>[
-//        if (IS_MOBILE)
-//          Positioned(
-//            bottom: -50,
-//            left: -ScreenUtil.screenWidthDp * 0.4,
-//            child: SvgPicture.asset(
-//              Assets.flashBg,
-//              width: ScreenUtil.screenWidthDp * 1.4,
-//            ),
-//          ),
         IntrinsicHeight(
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -414,7 +405,6 @@ class _HomePageState extends State<HomePage> with RouteAwarePlus, RouteObserverM
   }
 
 
-
   @override
   Widget build(BuildContext context) {
     if (!visible)
@@ -432,23 +422,6 @@ class _HomePageState extends State<HomePage> with RouteAwarePlus, RouteObserverM
               smallScreen : (_buildSmallScreen(context, constraints)),
             ),
           );
-/*
-          return SingleChildScrollView(
-            controller: AppGeneralLayout.scrollController,
-            child: ConstrainedBox(
-              constraints: BoxConstraints(
-                minWidth  : constraints.maxWidth,
-//                minHeight : constraints.maxHeight
-              ),
-              child: ResponsiveScreen(
-                key: const ValueKey("HomeLayoutResponsive"),
-                largeScreen : BoundingBox(child: _buildLargeScreen(context, constraints)),
-                mediumScreen: BoundingBox(child: _buildMediumScreen(context, constraints)),
-                smallScreen : BoundingBox(child: _buildSmallScreen(context, constraints)),
-              ),
-            ),
-          );
-*/
         });
   }
 

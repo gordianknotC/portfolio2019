@@ -270,8 +270,11 @@ class _GalleryBaseLayout extends StatelessWidget {
         ]);
       },
     );
-    return ContextKeeper(Keys.galleryKey,
-        child: child, screenSizeNotifier: ScreenUtil.screenSizeNotifier);
+    return ContextKeeper(
+        Keys.galleryKey,
+        child: child,
+        screenSizeNotifier: ScreenUtil.screenSizeNotifier
+    );
 //		return Container(
 //			width: w,
 //			height: h + 130,
@@ -345,12 +348,13 @@ class Gallery extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = IS_MOBILE ? SIZE_GALLERY : SIZE_DESKTOP;
     final gallery = _GalleryBaseLayout();
-    final w = constraints.maxWidth -
-        ScreenUtil.largeDesign.setWidth(HomeRCol.imageDesignPaddingR);
+
+    // 當前 gallery 的 constraints
+    final w = constraints.maxWidth - ScreenUtil.largeDesign.setWidth(HomeRCol.imageDesignPaddingR);
     final h = w / gallery.whRatio;
-    _D.d(() => 'set gallery h/w ($h/$w)');
-//		return gallery.base(w: w, h: h);
     final media = TRWMedia.fromConstaints(constraints);
+
+    // 依據 constraints, 及設計上的 responsive size 來選擇 render large|medium|small
     final responsive = ResponsiveElt(
         responsiveSize: size,
         media: media,

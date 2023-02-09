@@ -390,7 +390,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: d1b16ded2a1ef904a169ad61c2b851dd4d51d542
+      resolved-ref: e033ec4a1fe0826516826172d46903af4f348c9d
       url: "https://github.com/gordianknotC/dart_layout_widgets.git"
     source: git
     version: "0.0.0"

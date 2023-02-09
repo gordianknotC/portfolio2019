@@ -168,9 +168,9 @@ class _ContactPageState extends State<ContactPage>
           key: const ValueKey("ContactLayoutResponsive"),
           media: TRWMedia.fromConstaints(ScreenUtil.screenConstraintMax),
           responsiveSize: SIZE_DESIGNCANVAS,
-          large: BoundingBox(child: _buildLargeScreen(context, constraints)),
-          medium: BoundingBox(child: _buildMediumScreen(context, constraints)),
-          small: BoundingBox(child: _buildSmallScreen(context, constraints)),
+          large: DebugBox(child: _buildLargeScreen(context, constraints)),
+          medium: DebugBox(child: _buildMediumScreen(context, constraints)),
+          small: DebugBox(child: _buildSmallScreen(context, constraints)),
         ),
       );
     });

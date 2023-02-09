@@ -1,16 +1,12 @@
-import 'package:ui_common_behaviors/ui_common_behaviors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:layout_widgets/src/screen/screen_utils.dart';
-import 'package:layout_widgets/src/widgets/custom_appbar.dart';
-import 'package:layout_widgets/src/widgets/debugs.dart';
-import 'package:layout_widgets/src/widgets/responsive_widget.dart';
+import 'package:layout_widgets/layout_widgets.dart';
 import 'package:portfolio/constants/assets.dart';
 import 'package:portfolio/constants/colors.dart';
 import 'package:portfolio/constants/text_styles.dart';
-import 'package:portfolio/ui/applayout.dart';
 import 'package:portfolio/ui/layout/menu/menu_item.dart';
 import 'package:portfolio/ui/pages/home/home.dart';
+import 'package:ui_common_behaviors/ui_common_behaviors.dart';
 
 
 
@@ -143,39 +139,39 @@ class HomeAppBar  {
 		);
 	}
 
-	@Deprecated("cannot hide appbar by transform method, use sliverAppbar instead")
-	static PreferredSizeWidget buildHiddableAppBar(BuildContext context, BoxConstraints constraints) {
-		return HiddableAppBar(
-			hideDirection: ScrollDirection.reverse,
-			awareness: AppGeneralLayout.scrollAwareness,
-			height: 60,
-			builder:(leading, ctx){
-				return Container(
-					constraints: constraints,
-					color: Colors.transparent,
-					padding: EdgeInsets.only(top:20, bottom:10),
-					child: Row(
-							mainAxisSize: MainAxisSize.min,
-							mainAxisAlignment: MainAxisAlignment.start,
-							crossAxisAlignment: CrossAxisAlignment.center,
-							children:[
-								leading,
-								BoundingBox(child: ResponsiveScreen(
-									constraints: constraints,
-									largeScreen : BoundingBox(child: Paddings.homePadding(child: _buildLogoLarge())),
-									mediumScreen: BoundingBox(child: Paddings.homePadding(child: _buildLogoMedium())),
-									smallScreen : BoundingBox(child: _buildLogo()),
-								)),
-								if (!ResponsiveScreen.isSmallScreen(context))
-									Expanded(
-										child: Row(
-												mainAxisSize: MainAxisSize.min,
-												mainAxisAlignment: MainAxisAlignment.end,
-												children:_buildDrawerActionsWithoutSpacing(context, showIcon: false)),
-									),
-								SizedBox(width: ScreenUtil.largeDesign.setWidth(HomePage.designPaddingLR + 50))
-							]),
-				);
-		});
-	}
+	// @Deprecated("cannot hide appbar by transform method, use sliverAppbar instead")
+	// static PreferredSizeWidget buildHiddableAppBar(BuildContext context, BoxConstraints constraints) {
+	// 	return HiddableAppBar(
+	// 		hideDirection: ScrollDirection.reverse,
+	// 		awareness: AppGeneralLayout.scrollAwareness,
+	// 		height: 60,
+	// 		builder:(leading, ctx){
+	// 			return Container(
+	// 				constraints: constraints,
+	// 				color: Colors.transparent,
+	// 				padding: EdgeInsets.only(top:20, bottom:10),
+	// 				child: Row(
+	// 						mainAxisSize: MainAxisSize.min,
+	// 						mainAxisAlignment: MainAxisAlignment.start,
+	// 						crossAxisAlignment: CrossAxisAlignment.center,
+	// 						children:[
+	// 							leading,
+	// 							BoundingBox(child: ResponsiveScreen(
+	// 								constraints: constraints,
+	// 								largeScreen : BoundingBox(child: Paddings.homePadding(child: _buildLogoLarge())),
+	// 								mediumScreen: BoundingBox(child: Paddings.homePadding(child: _buildLogoMedium())),
+	// 								smallScreen : BoundingBox(child: _buildLogo()),
+	// 							)),
+	// 							if (!ResponsiveScreen.isSmallScreen(context))
+	// 								Expanded(
+	// 									child: Row(
+	// 											mainAxisSize: MainAxisSize.min,
+	// 											mainAxisAlignment: MainAxisAlignment.end,
+	// 											children:_buildDrawerActionsWithoutSpacing(context, showIcon: false)),
+	// 								),
+	// 							SizedBox(width: ScreenUtil.largeDesign.setWidth(HomePage.designPaddingLR + 50))
+	// 						]),
+	// 			);
+	// 	});
+	// }
 }

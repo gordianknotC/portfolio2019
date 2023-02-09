@@ -18,8 +18,8 @@ class AppSetting {
 	static bool get boxDebug => _boxDebug;
 	static 		  set boxDebug (bool v) {
 		_boxDebug = v;
-		if (v) 	BoundingBox.setBoxDebugOn();
-		else  	BoundingBox.setBoxDebugOff();
+		if (v) 	DebugBox.setBoxDebugOn();
+		else  	DebugBox.setBoxDebugOff();
 	}
 
 	factory AppSetting.F(){
