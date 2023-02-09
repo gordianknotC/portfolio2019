@@ -14,8 +14,8 @@
 
 [portfolio]: https://gordianknotC.github.io/portfolio2019Fl
 [Panel]: https://pub.dev/packages/sliding_up_panel
-[ga_simple]: https://gordianknotC.github.io/dart_simple_ga
-[simple_audio_button]: https://gordianknotC.github.io/dart_simple_audio_button
-[layout_widgets]: https://gordianknotC.github.io/dart_layout_widgets
-[ui_common_behaviors]: https://gordianknotC.github.io/dart_common_ui_behaviors
-[dart_common]: https://gordianknotC.github.io/dart_common
+[ga_simple]: https://github.com/gordianknotC/dart_simple_ga
+[simple_audio_button]: https://github.com/gordianknotC/dart_simple_audio_button
+[layout_widgets]: https://github.com/gordianknotC/dart_layout_widgets
+[ui_common_behaviors]: https://github.com/gordianknotC/dart_common_ui_behaviors
+[dart_common]: https://github.com/gordianknotC/dart_common
