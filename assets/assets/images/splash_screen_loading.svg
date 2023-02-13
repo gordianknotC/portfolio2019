@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" height="100%"
+    version="1.1" viewBox="0 0 545 1010"
+    width="100%" xmlns="http://www.w3.org/2000/svg"
+    xml:space="preserve"><g id="progress"><path style="fill:#fff;fill-opacity:0.1;" d="M272.485,505.044c9.744,0 17.655,7.911 17.655,17.656c0,9.745 -7.911,17.656 -17.655,17.656c-9.745,0 -17.656,-7.911 -17.656,-17.656c0,-9.745 7.911,-17.656 17.656,-17.656Zm0,4.414c7.308,0 13.241,5.934 13.241,13.242c0,7.308 -5.933,13.242 -13.241,13.242c-7.309,0 -13.242,-5.934 -13.242,-13.242c0,-7.308 5.933,-13.242 13.242,-13.242Z"/>
+        <path
+            style="fill:#ffbc15;fill-opacity:0.87;"
+            d="M284.969,535.185c3.311,-3.311 5.171,-7.802 5.171,-12.485c0,-4.683 -1.86,-9.174 -5.171,-12.485l-3.121,3.122c2.483,2.483 3.878,5.851 3.878,9.363c0,3.512 -1.395,6.88 -3.878,9.363l3.121,3.122Z" /></g>
+    <rect style="fill:none;" height="1010" id="splash_screen_loading" width="545" x="0" y="0"/>
+    <style>
+        @keyframes loading-spinner{
+            from {transform: rotate(0deg);}
+            to   {transform: rotate(360deg);}
+        }
+        #progress{
+            animation: loading-spinner 0.6s linear infinite;
+            transform-origin: 272.5px 522.7px;
+        }
+    </style>
+</svg>
