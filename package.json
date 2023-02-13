@@ -1,0 +1,15 @@
+{
+  "name": "@gdknot/flutter_portfolio",
+  "version": "0.0.1",
+  "description": "flutter web",
+  "scripts": {
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+  },
+  "devDependencies": {
+  },
+  "author": "gordianknot",
+  "license": "ISC"
+}
